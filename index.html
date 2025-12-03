@@ -34,10 +34,13 @@
 
         body {
             font-family: 'Zen Maru Gothic', sans-serif;
-            background-color: var(--ac-green);
-            /* 更細緻的斜紋背景 */
+            /* 淺藍底 + 中型藍色圓點圖樣（交錯排列） */
+            background-color: #e8f8ff;
             background-image:
-                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.2) 20px, rgba(255, 255, 255, 0.2) 40px);
+            radial-gradient(circle, rgba(79,181,217,0.95) 0 8px, rgba(79,181,217,0) 9px),
+            radial-gradient(circle, rgba(79,181,217,0.7) 0 4px, rgba(79,181,217,0) 5px);
+            background-size: 48px 48px, 48px 48px;
+            background-position: 0 0, 24px 24px;
             min-height: 100vh;
             color: var(--ac-dark);
             /* 防止 iOS 左右滑動 */
