@@ -296,21 +296,21 @@
         }
 
         function getAdvice(rainProb, maxTemp) {
-            let rainIcon = "🌂";
-            let rainText = "直接衝出門";
+            let rainIcon = "🚶";
+            let rainText = "輕鬆散步";
             if (parseInt(rainProb) > 30) {
-                rainIcon = "☂️";
-                rainText = "記得帶傘！";
+            rainIcon = "🏃";
+            rainText = "別忘帶傘";
             }
 
-            let clothIcon = "👕";
-            let clothText = "舒適穿搭";
+            let clothIcon = "👔";
+            let clothText = "清爽著裝";
             if (parseInt(maxTemp) >= 28) {
-                clothIcon = "🎽";
-                clothText = "短袖出發";
+            clothIcon = "👙";
+            clothText = "清涼穿衣";
             } else if (parseInt(maxTemp) <= 20) {
-                clothIcon = "🧥";
-                clothText = "加件外套";
+            clothIcon = "🧤";
+            clothText = "穿暖一點";
             }
 
             return { rainIcon, rainText, clothIcon, clothText };
